@@ -1,7 +1,8 @@
 {
-    "name": "AI Quiz Environment",
-    "image": "mcr.microsoft.com/vscode/devcontainers/python:3",
-    "postCreateCommand": "pip install -r requirements.txt",
-    "settings": {},
-    "extensions": []
+  "name": "AI Quiz Environment",
+  "image": "mcr.microsoft.com/vscode/devcontainers/python:3",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "postStartCommand": "python lambda_quiz.py",
+  "settings": {},
+  "extensions": []
 }
